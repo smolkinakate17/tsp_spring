@@ -1,0 +1,584 @@
+.body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr;
+
+}
+.bodymess{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr 150px;
+}
+
+.page {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    top: 70px;
+    width: 100%;
+
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+
+    width:100%;
+    height: 70px;
+
+
+    background: #9BCFDF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.title{
+    /* Форум для студентов Самарского университета */
+
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+.search_wrapper{
+
+    grid-column:1 ;
+
+    width: 640px;
+    height: 30px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 2px solid #92D2E6;
+    border-radius: 33px;
+
+}
+
+.inputSubmit {
+    grid-column:2 ;
+    background: #FFFFFF;
+    border: 2px solid #92D2E6;
+    border-radius: 33px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    font-size: 14px;
+
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    background: #32A2C6;
+    border-radius: 33px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    margin: 10px;
+    background: #32A2C6;
+    border-radius: 33px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.button1:hover{
+    background: #47bfe7;
+    transition: 0.5s;
+}
+.button1:active{
+    background: #47bfe7;
+    transition: 0.5s;
+}
+.button2:hover{
+    background: #47bfe7;
+    transition: 0.5s;
+}
+.button2:active{
+    background: #47bfe7;
+    transition: 0.5s;
+}
+.searchForm{
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    align-items: center;
+}
+
+
+/* Левый блок */
+.leftList {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    height: 100%;
+    min-height: 535px;
+    background: #D8EEF5;
+    border-right: 3px solid #9BCFDF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.leftListblock {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 3px solid #9BCFDF ;
+
+    background: #D8EEF5;
+
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.leftListblockButton{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    size: 30px;
+    background: #D8EEF5;
+    border: none;
+    margin: 20px;
+}
+.leftListblockButton:hover{
+    background: #c4d9df;
+
+    transition: 0.5s;
+}
+
+.leftListblockButton:active{
+    background: #89abb6;
+
+    transition: 0.5s;
+}
+/* Популярные темы*/
+.popularBlock {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(11, 60px) ;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    align-items: center;
+    left: 200px;
+}
+
+.popularPopular{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+
+}
+.popularText {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    size: 30px;
+    margin: 20px;
+
+}
+
+.themeBlock{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    align-items: center;
+    outline: 1px solid #9BCFDF ;
+}
+.themeText{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: 20px;
+}
+
+/* популярные теги*/
+.popularBlockTags{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(11, 60px) ;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.popularBlockTagsText{
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #9BCFDF ;
+}
+.gridblock{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.tagblock{
+    height: 30px;
+    width:max-content;
+    background: #32A2C6;
+    border-radius: 33px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+
+}
+.tagblockText{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+/* Популярные авторы*/
+.authorName{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    size: 20px;
+    padding: 10px;
+}
+
+/* Страница темы*/
+
+
+.blockTheme{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    padding-bottom: 150px;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+
+
+}
+
+.blockThemeText{
+    overflow: auto;
+    background: #FFFFFF;
+
+    align-items: center;
+    border-bottom: 2px solid #9BCFDF;
+}
+.popularText {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+.populatTextTheme{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    size: 25px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+
+    width: 95%;
+}
+.themeTags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #9BCFDF ;
+}
+.tagblockTheme{
+    height: 30px;
+    width:max-content;
+    background: #32A2C6;
+    border-radius: 33px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+
+}
+
+.messegeBlockDelete{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    align-items: center;
+}
+
+
+.messegesBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: max-content ;
+    max-width: 700px;
+    height: max-content;
+    border: 3px solid #9BCFDF;
+    border-radius: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.messegeAuthor{
+    display: flex;
+    width: auto;
+    background: #9BCFDF;
+
+    border-radius: 19px 19px 0px 0px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.messegeAuthorNamePic{
+    margin: 10px;
+}
+.messegeAuthorName{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+.messegeText{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+.newMessegeBlock{
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    bottom: 0px;
+
+
+
+    overflow: auto;
+    background: #FFFFFF;
+    border-top: 3px solid #9BCFDF;
+
+    align-items: center;
+
+
+}
+.newMessegeTextBlock{
+    background: #d4f2fb;
+    border-radius: 20px;
+    width: 75%;
+    min-height: 110px;
+    overflow: auto;
+
+    justify-content: space-between;
+
+    margin-right: 40px;
+    margin-left: 20px;
+
+}
+
+.newMessegeText  {
+    background: #d4f2fb;
+    border: none;
+    width: 850px;
+    height: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin: 20px;
+    outline: none;
+}
+.logoutMessage{
+
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    overflow: auto;
+    background: #FFFFFF;
+    border-top: 3px solid #9BCFDF;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left {
+    float: left;
+    width: 0px;
+}
+.right {
+    overflow: auto;
+}
+
+
+.blockinput{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 428px;
+    height: 352px;
+
+    background: #9BCFDF;
+    border: 1px solid #92D2E6;
+    border-radius: 11px;
+}
+.shapkainputblock{
+    position: absolute;
+    width: 428px;
+    height: 74px;
+    left: 0px;
+    top: 0.82px;
+
+    background: #32A2C6;
+    border-radius: 11px 11px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+.inputtext{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.inputbody{
+    width: auto;
+    height: auto;
+    display: flex;
+    width: 428px;
+    margin-top: 60px;
+    border-radius: 0px 0px 11px 11px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align:center;
+
+}
+.signin{
+    width: 300px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border-radius: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/*Добавление новой темы*/
+textarea{
+    resize: none;
+}
+
+.newThemeText{
+    background: #FFFFFF;
+    border: none;
+    width: 400px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin: 5px;
+    outline: none;
+}
+.textadd{
+    font-family: 'Roboto';
+    font-style: normal;
+    size: 15px;
+
+    color: #000000;
+}
+.ThemeblockAdd{
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    bottom: 0px;
+    overflow: auto;
+    align-items:flex-end;
+    margin-left: 85%;
+}
